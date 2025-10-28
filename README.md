@@ -1,0 +1,2 @@
+# diniwidiawatiallshop
+Sistem informasi jualan

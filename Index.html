@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Sandal Trendy</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .produk {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .btn-beli {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-beli:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Toko Sandal Trendy</h1>
+    <p>Sandal Nyaman, Gaya Kekinian!</p>
+  </header>
+
+  <section class="produk">
+    <div class="card">
+      <img src="https://i.imgur.com/Y1B7XyB.jpg" alt="Sandal Wanita">
+      <h3>Sandal Wanita</h3>
+      <p>Rp 75.000</p>
+      <button class="btn-beli" onclick="beli('Sandal Wanita')">Beli Sekarang</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/VSHv8Ht.jpg" alt="Sandal Pria">
+      <h3>Sandal Pria</h3>
+      <p>Rp 80.000</p>
+      <button class="btn-beli" onclick="beli('Sandal Pria')">Beli Sekarang</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.imgur.com/jVbHtb8.jpg" alt="Sandal Anak">
+      <h3>Sandal Anak</h3>
+      <p>Rp 50.000</p>
+      <button class="btn-beli" onclick="beli('Sandal Anak')">Beli Sekarang</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Toko Sandal Trendy | Instagram: @sandal_trendy</p>
+  </footer>
+
+  <script>
+    function beli(namaProduk) {
+      alert("Kamu memilih " + namaProduk + ". Silakan hubungi admin untuk pemesanan 😊");
+    }
+  </script>
+
+</body>
+</html>
